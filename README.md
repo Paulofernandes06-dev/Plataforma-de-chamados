@@ -35,7 +35,7 @@ Este é um sistema de gestão de chamados técnicos desenvolvido para otimizar a
 
 ## ✒️ Autor
 
-Desenvolvido por **[Seu Nome]** - *Idealização e Desenvolvimento Front-end*.
+Desenvolvido por PAULO JOSÉ ALMEIDA FERNANDES JÚNIOR - Idealização e Desenvolvimento Front-end.
 
 ---
 *Projeto desenvolvido para fins de aprimoramento técnico e aplicação prática no ambiente hospitalar.*
