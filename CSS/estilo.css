@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0040cc;
+}
+.logo{
+    height: 60px;
+    width: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.titulo-site{
+    color: white;
+}
+body{
+    background-color: #F4F7F9;
+}
+.btn-enviar {
+    background-color: #0039B6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-bottom: 50px;
+}
+.btn-enviar:hover {
+    background-color: #002a85;
+}
+.container-chamado{
+    padding: 30px 20px;
+    display: flexbox;
+    justify-content: space-between;
+}
+.container-chamado h2 {
+    text-align: center;
+    color: #0040cc;
+    margin-bottom: 30px;
+}
+.campo{
+    margin-bottom: 20px;
+}
+.container-chamado p {
+    text-align: left;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+/*FOOTER DECORATION */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.btn-admin{
+    text-decoration: none;
+    color: #0040cc;
+    border: 1px solid #002a85;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    justify-content: center;
+}
