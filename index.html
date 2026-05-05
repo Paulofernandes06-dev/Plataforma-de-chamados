@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChamadosHBPUberaba</title>
+    <title>HBP - Abertura de Chamados</title>
     <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
+
+    <!-- CABEÇALHO: Identidade visual unificada -->
     <header class="header-container">
-        <a href="index.html"><img src="imagens/Wallpaperpcshbp-redimensionado-logo.png" alt="LOGO_HBP" class="logo"></a>
-        <div class="titulo-container">
-            <h1 class="titulo-site">PLATAFORMA DE CHAMADOS</h1>
-        </div>
+        <a href="index.html">
+            <img src="imagens/Wallpaperpcshbp-redimensionado-logo.png" alt="LOGO HBP" class="logo">
+        </a>
+        <h1 class="titulo-site">Plataforma de Chamados</h1>
     </header>
+
+    <!-- CONTEÚDO PRINCIPAL: Formulário centralizado -->
     <main class="container-chamado">
-            <h2>Abertura de Chamado - HBP -</h2>
-            <p>Preencha os campos abaixo para solicitar assistência técnica.</p>
-    <div>
+        <h2>Abertura de Chamado</h2>
+        <p>Preencha os campos abaixo para solicitar assistência técnica.</p>
+
         <form id="form-chamado">
-            <!-- Setor do Hospital -->
+            <!-- NOMENCLATURA: IDs claros para captura via JavaScript -->
             <div class="campo">
                 <label for="setor">Setor / Ala:</label>
                 <select id="setor" name="setor" required>
@@ -27,45 +31,52 @@
                     <option value="Postosus1">Posto Sus 1</option>
                     <option value="Maternidade">Maternidade</option>
                     <option value="Postosus3">Posto Sus 3</option>
-                    <option value="administrativo">Administrativo(Casarão)</option>
+                    <option value="administrativo">Administrativo (Casarão)</option>
                 </select>
             </div>
-            <!-- Tipo de Problema -->
+
             <div class="campo">
                 <label for="categoria">Categoria:</label>
                 <select id="categoria" name="categoria" required>
                     <option value="" disabled selected>O que precisa de reparo?</option>
-                    <option value="ti">TI (Computador/Internet)</option>
+                    <option value="ti">TI (Informática)</option>
                     <option value="manutencao">Manutenção Predial</option>
-                    <option value="clinica">Engenharia Clínica (Equipamentos)</option>
+                    <option value="clinica">Engenharia Clínica</option>
                     <option value="limpeza">Higiene e Limpeza</option>
-                    <option value="impressoras">Impressoras (terceirizadas)</option>
                 </select>
             </div>
-            <!-- Prioridade -->
+
             <div class="campo">
                 <label>Prioridade:</label>
                 <div class="radios">
+                    <!-- ACESSIBILIDADE: input type radio com labels vinculados pelo 'for' -->
                     <input type="radio" id="baixa" name="prioridade" value="baixa">
                     <label for="baixa">Baixa</label>
+                    
                     <input type="radio" id="media" name="prioridade" value="media" checked>
-                    <label for="media">Media</label>
+                    <label for="media">Média</label>
+                    
                     <input type="radio" id="alta" name="prioridade" value="alta">
                     <label for="alta">Alta</label>
                 </div>
             </div>
-            <!-- Descrição -->
+
             <div class="campo">
                 <label for="descricao">Descrição do Problema:</label>
-                <textarea id="descricao" name="descricao" rows="4" placeholder="Ex: Computadores do posto estão sem internet" required></textarea>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Detalhe o ocorrido aqui..." required></textarea>
             </div>
-            <!-- Botão de Enviar -->
-            <button type="submit" class="btn-enviar">Abrir Chamado</button>
+
+            <button type="submit" class="btn-enviar">ABRIR CHAMADO</button>
         </form>
+    </main>
+
+    <!-- RODAPÉ: Navegação secundária -->
+    <footer class="footer-container">
+        <a href="painel.html" class="btn-admin">Área do Técnico</a>
+        <a href="status.html" class="btn-status">Status dos Chamados</a>
+    </footer>
+    <div class="assinatura-projeto">
+        <p>Plataforma HBP v1.0 | Desenvolvido por <strong>PAULO JOSÉ ALMEIDA FERNANDES JÚNIOR</strong> — 2026</p>
     </div>
-</main>
-<footer class="footer-container">
-    <a href="painel.html" class="btn-admin">Área do Técnico</a>
-</footer>
 </body>
 </html>

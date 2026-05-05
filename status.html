@@ -2,42 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>HBP - Painel Técnico</title>
+    <title>HBP - Status</title>
     <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
 
     <header class="header-container">
         <a href="index.html"><img src="imagens/Wallpaperpcshbp-redimensionado-logo.png" alt="LOGO HBP" class="logo"></a>
-        <h1 class="titulo-site">Área do Técnico</h1>
+        <h1 class="titulo-site">Status dos Chamados</h1>
     </header>
 
     <nav class="voltar-container">
         <a href="index.html" class="voltar">⬅ VOLTAR AO INÍCIO</a>
     </nav>
 
-    <main class="dashboard-container">
-        <section class="tabela-card">
-            <h2>Gestão de Chamados Ativos</h2>
+    <main class="container-status">
+        <section class="card-status">
+            <h2>Fila de Atendimento</h2>
+            <p>Acompanhe o progresso das solicitações por setor.</p>
+
             <table class="tabela-geral">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Hora</th>
                         <th>Setor</th>
+                        <th>Hora</th>
                         <th>Prioridade</th>
-                        <th>Status</th>
-                        <th>Ações</th>
+                        <th>Situação</th>
                     </tr>
                 </thead>
-                <!-- ID para manipulação via DOM (JavaScript) -->
-                <tbody id="corpo-tabela-tecnico">
+                <!-- Nomeclatura distinta para evitar conflitos no JS -->
+                <tbody id="corpo-tabela-status">
                     <!-- Linhas injetadas dinamicamente -->
                 </tbody>
             </table>
         </section>
     </main>
-    <div class="assinatura-projeto">
+    <!-- ASSINATURA DE AUTORIA -->
+<div class="assinatura-projeto">
     <p>Plataforma HBP v1.0 | Desenvolvido por <strong>PAULO JOSÉ ALMEIDA FERNANDES JÚNIOR</strong> — 2026</p>
 </div>
 </body>
