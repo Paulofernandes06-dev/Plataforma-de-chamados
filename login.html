@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBP - Login Técnico</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <a href="index.html">
+            <img src="imagens/Wallpaperpcshbp-redimensionado-logo.png" alt="LOGO HBP" class="logo">
+        </a>
+        <h1 class="titulo-site">Área Restrita</h1>
+    </header>
+
+    <main class="container-chamado">
+        <h2>Login do Técnico</h2>
+        <p style="text-align:center;margin-bottom:20px;color:#666;">
+            Acesso exclusivo para equipe técnica autorizada.
+        </p>
+
+        <form id="form-login">
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    required
+                    style="width:100%;padding:12px;border:1px solid #ccc;border-radius:5px;font-size:16px;"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="••••••••"
+                    required
+                    style="width:100%;padding:12px;border:1px solid #ccc;border-radius:5px;font-size:16px;"
+                >
+            </div>
+
+            <button type="submit" class="btn-enviar">ENTRAR</button>
+        </form>
+    </main>
+
+    <footer class="footer-container">
+        <a href="index.html" class="btn-status">⬅ Voltar ao Início</a>
+    </footer>
+
+    <div class="assinatura-projeto">
+        <p>Plataforma HBP v2.0 | Desenvolvido por <strong>PAULO JOSÉ ALMEIDA FERNANDES JÚNIOR</strong> — 2026</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

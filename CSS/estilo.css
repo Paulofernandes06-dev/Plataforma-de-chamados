@@ -127,7 +127,22 @@ th {
     text-align: left;
     border-bottom: 2px solid #0039B6;
 }
+/* ============================================================
+   CONTROLE DA COLUNA DE DESCRIÇÃO (ANTI-QUEBRA)
+   ============================================================ */
 
+/* 1. Aplique esta classe na sua nova <th> e nas <td> da descrição */
+.coluna-descricao {
+    max-width: 250px;       /* Define um limite máximo de largura para a coluna */
+    white-space: nowrap;    /* Impede que o texto pule de linha e estique a tabela para baixo */
+    overflow: hidden;       /* Esconde o texto que passar do limite */
+    text-overflow: ellipsis;/* Coloca os "..." automaticamente no final do texto cortado */
+    cursor: pointer;        /* Muda o mouse para a mãozinha, indicando interação */
+}
+/* 2. Efeito ao passar o mouse: Mostra o texto completo em um balão nativo */
+.coluna-descricao:hover {
+    color: #0039B6;         /* Muda a cor sutilmente para o azul do hospital */
+}
 td {
     padding: 12px;
     border-bottom: 1px solid #eee;
